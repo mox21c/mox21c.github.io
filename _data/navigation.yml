@@ -52,8 +52,6 @@ header:
     url: /about.html
 
   docs-ko:
-    - title: 기초 선형대수학 이론
-
     - title: 선형대수학 응용
         children:
             - title: 주성분분석(PCA)
