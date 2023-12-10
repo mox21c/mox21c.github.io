@@ -52,7 +52,7 @@ header:
     url: /about.html
 
 docs-ko:
-  - title: 선형대수학 응용
+  - title: NLP
     children:
       - title: 주성분분석(PCA)
         url: 2023/12/11/PCA.html
