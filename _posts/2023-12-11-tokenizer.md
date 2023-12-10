@@ -10,9 +10,7 @@ lang: ko
 ---
 
 # Tokenizer
-`토큰화`{: .success}
-
-Keras preprocessing {: .label .label-green}
+`토큰화`{:.success}, `Keras preprocessing`{:.info}
 
 하나의 문서 또는 문장의 내용 의미 파악을 어떻게 하는 것일까?
 {: .fs-6 .fw-300 }
