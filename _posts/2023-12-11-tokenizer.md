@@ -10,8 +10,7 @@ lang: ko
 ---
 
 # Tokenizer
-토큰화
-{: .label .label-blue}
+'토큰화' {: .success}
 
 Keras preprocessing
 {: .label .label-green}
