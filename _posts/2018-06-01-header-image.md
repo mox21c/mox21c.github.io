@@ -1,5 +1,8 @@
 ---
+layout: article
 title: Post with Header Image
+sidebar:
+  nav: layouts
 tags: TeXt
 article_header:
   type: cover
