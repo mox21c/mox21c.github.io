@@ -5,7 +5,7 @@ sidebar:
 aside:
   toc: true
 key: 20231211
-tags: 토큰화
+tags: tokenizer
 lang: ko
 ---
 

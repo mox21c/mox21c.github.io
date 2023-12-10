@@ -54,6 +54,6 @@ header:
 docs-ko:
   - title: NLP
     children:
-      - title: 주성분분석(PCA)
-        url: 2023/12/11/PCA.html
+      - title: 토큰화(Tokenizer)
+        url: 2023/12/11/tokenizer.html
 
