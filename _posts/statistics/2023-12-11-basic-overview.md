@@ -61,8 +61,8 @@ lang: ko
 - 범주형 변수는 도수분포표(frequency table)로 요약 할 수 있다.
 - 도수 : 범주형 자료의 경우 각 범주 별 빈도를 셀 수 있으면 이를 도수(frequency) 라 한다.
 - 상대도수(relative frequency) : 도수를 전체 관측개체의 숫자로 나눈 값
-![Image](/assets/images/statistics/frequency_data.png){:width="6000px" height="200px"}
-![Image](/assets/images/statistics/frequency.png){:width="6000px" height="200px"}
+![Image](/assets/images/statistics/frequency_data.png){:width="800px" height="200px"}
+![Image](/assets/images/statistics/frequency.png){:width="600px" height="200px"}
 
 
 
