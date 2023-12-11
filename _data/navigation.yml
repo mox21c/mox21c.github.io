@@ -30,3 +30,8 @@ doc-ai-ko:
       - title: 임베딩(embedding)
         url: 2023/12/11/embedding.html
 
+doc-statistic-ko:
+  - title: 기초통계
+    children:
+      - title: Overview
+
