@@ -56,4 +56,6 @@ docs-ko:
     children:
       - title: 토큰화(Tokenizer)
         url: 2023/12/11/tokenizer.html
+      - title: 임베딩(embedding)
+        url: 2023/12/11/embedding.html
 
