@@ -14,8 +14,7 @@ tags: embedding
 lang: ko
 ---
 
-# 임베딩(Word Embedding)
-`EMBEDDING`{:.success} `ONE-HOT ENCODING`{:.success}
+`EMBEDDING`{:.success} `word embedding`{:.success} `ONE-HOT ENCODING`{:.success}
 
 각 문서에서 중요한 단어를 추출하여 벡터로 표현하여 수치화 하기 위한 작업으로, 문장의 벡터를 원하는 크기로 축소한다.
 

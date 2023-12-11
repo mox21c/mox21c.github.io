@@ -15,7 +15,7 @@ lang: ko
 ---
 
 # 토큰화(Tokenizer)
-`토큰화`{:.success} `Keras preprocessing`{:.info}
+`토큰화`{:.success} `Keras preprocessing`{:.**success**}
 
 하나의 문서 또는 문장의 내용 의미 파악을 하기 위해선 수치화 할 수 있어야 한다. 수치화 할 수 있는 방법은 문장을 벡터로 만들어야 하고, 문장을 벡터를 만드는 과정을 문장을 토큰화 한다고 볼 수 있다.
 
