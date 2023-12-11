@@ -49,6 +49,7 @@ embedding 은 one-hot matrix 의 범주형 데이터를 연속적 값을 갖는 
 
 ## Embedding processing
 sequence of word -> one-hot vector -> embedding vector 형태의 프로세스를 가진다.
+
 ![embedding_process](/assets/images/ai/embedding_process.png)
 
 사실 여기에서 의문점이 하나 생길 수 있다. BOW 와 임베딩은 똑같이 문장을 단어로 만들어 벡터화 하는 작업으로 어떤 차이점이 있을까? BOW는 단어들의 빈도를 벡터 형태로 표현한다. 카운트 기반의 문서 표현에는 희소 벡터를 밀집 벡터로 표현하는 과정이 없으로 이것도 하나의 embedding 작업이다. 학습이나 통계적 기법으로 희소 벡터를 축소해 밀집벡터로 변환하고 그 벡터로 분석을 수행한다면 좀 더 완전한 embedding 으로 볼 수 있다.
