@@ -31,7 +31,8 @@ doc-ai-ko:
         url: 2023/12/11/embedding.html
 
 doc-statistic-ko:
-  - title: 기초통계
+  - title: 기초통계(basic)
     children:
       - title: Overview
+        url: 2023/12/11/basic-overview.html
 
