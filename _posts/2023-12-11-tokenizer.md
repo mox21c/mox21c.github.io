@@ -1,4 +1,9 @@
 ---
+layout: article
+article_header:
+  type: cover
+  image:
+    src: /assets/images/ai/nlp.png
 title: 토큰화(Tokenizer)
 sidebar:
   nav: docs-ko
@@ -10,7 +15,7 @@ lang: ko
 ---
 
 # Tokenizer
-`토큰화`{:.success}, `Keras preprocessing`{:.info}
+`토큰화`{:.success} `Keras preprocessing`{:.info}
 
 하나의 문서 또는 문장의 내용 의미 파악을 어떻게 하는 것일까?
 {: .fs-6 .fw-300 }
