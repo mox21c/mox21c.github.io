@@ -48,7 +48,7 @@ lang: ko
 - 군집표본추출(cluster random sampling) : 모집단을 군집으로 분류한 후 군집을 단순의의 추출하고 추출된 군집 내 개체들을 표본으로 사용함
 - 층화표본추출(stratified random sampling) : 모집단을 층 내의 개체들은 상대적으로 동질적이고 다른 층의 개체들은 상대적으로 이질적이 되도록 층을 나눈 후 층 내에서 독립적인 표본추출을 함
 
-![sampling](/assets/images/statistics/sampling.png)
+![Image](/assets/images/statistics/sampling.png)
 
 ## 자료의 정리
 ### 변수의 종류
@@ -61,8 +61,8 @@ lang: ko
 - 범주형 변수는 도수분포표(frequency table)로 요약 할 수 있다.
 - 도수 : 범주형 자료의 경우 각 범주 별 빈도를 셀 수 있으면 이를 도수(frequency) 라 한다.
 - 상대도수(relative frequency) : 도수를 전체 관측개체의 숫자로 나눈 값
-![frequency_data](/assets/images/statistics/frequency_data.png)
-![frequency](/assets/images/statistics/frequency.png)
+![Image](/assets/images/statistics/frequency_data.png){:width="240px" height="200px"}
+![Image](/assets/images/statistics/frequency.png)
 
 
 
