@@ -20,7 +20,7 @@ header:
       ko: &KO       STATISTICS
       ko-KR: *KO
       # @end locale config
-      url: 2023/12/11/tokenizer.html
+    url: 2023/12/11/basic-overview.html
 
 doc-ai-ko:
   - title: NLP
