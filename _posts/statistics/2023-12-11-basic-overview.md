@@ -4,17 +4,17 @@ article_header:
   type: cover
   image:
     src: /assets/images/statistics/statistics.png
-title: Basic OverView
+title: 기초통계(overview)
 sidebar:
   nav: doc-statistic-ko
 aside:
   toc: true
 key: 20231211
-tags: overview
+tags: 기초통계
 lang: ko
 ---
 
-`EMBEDDING`{:.success} `word embedding`{:.success} `ONE-HOT ENCODING`{:.success}
+`기초통계`{:.success}
 
 각 문서에서 중요한 단어를 추출하여 벡터로 표현하여 수치화 하기 위한 작업으로, 문장의 벡터를 원하는 크기로 축소한다.
 

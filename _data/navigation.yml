@@ -33,6 +33,6 @@ doc-ai-ko:
 doc-statistic-ko:
   - title: 기초통계(basic)
     children:
-      - title: Overview
+      - title: 기초통계(overview)
         url: 2023/12/11/basic-overview.html
 
