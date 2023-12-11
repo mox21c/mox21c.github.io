@@ -1,15 +1,26 @@
 header:
   - titles:
       # @start locale config
-      en      : &EN       Docs
+      en      : &EN       AI
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
       en-AU   : *EN
-      ko      : &KO       문서
+      ko      : &KO       AI
       ko-KR   : *KO
       # @end locale config
     url: 2023/12/11/tokenizer.html
+  - titles:
+      # @start locale config
+      en: &EN       STATISTICS
+      en-GB: *EN
+      en-US: *EN
+      en-CA: *EN
+      en-AU: *EN
+      ko: &KO       STATISTICS
+      ko-KR: *KO
+      # @end locale config
+      url: 2023/12/11/tokenizer.html
 
 
 docs-ko:
