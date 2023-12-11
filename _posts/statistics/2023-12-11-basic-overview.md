@@ -21,7 +21,7 @@ lang: ko
 
 <!--more-->
 
-## 서론
+## 1. 서론
 ### 모집단과 표본
 - 모집단 : 연구 대상인 모든 가능한 관측값이나 측벙값의 집합을 말한다.
 - 표본 : 통계적 처리를 위하여 모집단에서 실제로 추출한 관측값이나 측정값의 집합을 말한다.
@@ -37,7 +37,7 @@ lang: ko
 - 모수(parameter) : 모집단에 관한 숫자 요약
 - 통계량(statistic) : 표본의 숫자 요약
 
-## 자료의 수집
+## 2. 자료의 수집
 ### 자료의 수집
 - 정확한 추정(estimation), 검정(testing)을 위해서는 적절한 방식으로 자료를 수집해야 한다.
 - 자료의 수집에는 표본에 따른 변동성(variability) 및 측정에 따른 변동성이 존재한다.
@@ -50,7 +50,7 @@ lang: ko
 
 ![Image](/assets/images/statistics/sampling.png)
 
-## 자료의 정리
+## 3. 자료의 정리
 ### 변수의 종류
 - 범주형 변수(질적변수) : 자료가 가질 수 있는 값이 몇 개의 범주로 구성 됨
   - 명목형 변수 : 범주들이 순위 개념이 없음
@@ -63,9 +63,11 @@ lang: ko
 - 상대도수(relative frequency) : 도수를 전체 관측개체의 숫자로 나눈 값
 
 [데이터]
+
 ![Image](/assets/images/statistics/frequency_data.png){:width="600px" height="200px"}
 
 [도수 & 상대도수]
+
 ![Image](/assets/images/statistics/frequency.png){:width="400px" height="200px"}
 
 
