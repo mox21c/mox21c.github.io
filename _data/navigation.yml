@@ -22,8 +22,7 @@ header:
       # @end locale config
       url: 2023/12/11/tokenizer.html
 
-
-docs-ko:
+doc-ai-ko:
   - title: NLP
     children:
       - title: 토큰화(Tokenizer)

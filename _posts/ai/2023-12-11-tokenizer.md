@@ -6,7 +6,7 @@ article_header:
     src: /assets/images/ai/nlp.png
 title: 토큰화(Tokenizer)
 sidebar:
-  nav: docs-ko
+  nav: doc-ai-ko
 aside:
   toc: true
 key: 20231211
