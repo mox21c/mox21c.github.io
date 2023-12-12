@@ -10,6 +10,6 @@ sidebar:
 aside:
   toc: true
 key: 20231212
-tags: numpy(deep learning)
+tags: numpy
 lang: ko
 ---
