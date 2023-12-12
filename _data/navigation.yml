@@ -39,11 +39,11 @@ doc-ai-ko:
       - title: Numpy(DeepLearning)
         url: 2023/12/12/deeplearning-numpy.html
   - title: NLP
-      children:
-          - title: 토큰화(Tokenizer)
-            url: 2023/12/11/tokenizer.html
-              - title: 임베딩(embedding)
-                url: 2023/12/11/embedding.html
+    children:
+      - title: 토큰화(Tokenizer)
+        url: 2023/12/11/tokenizer.html
+      - title: 임베딩(embedding)
+        url: 2023/12/11/embedding.html
 
 doc-statistic-ko:
   - title: 기초통계(basic)
