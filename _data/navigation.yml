@@ -31,7 +31,7 @@ header:
       ko: &KO       PANDAS
       ko-KR: *KO
       # @end locale config
-      url: 2023/12/12/pandas-groupby-1.html
+    url: 2023/12/12/pandas-groupby-1.html
 
 doc-ai-ko:
   - title: NLP
