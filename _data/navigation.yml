@@ -9,7 +9,7 @@ header:
       ko      : &KO       AI
       ko-KR   : *KO
       # @end locale config
-    url: 2023/12/11/deeplearning-numpy.html
+    url: 2023/12/12/deeplearning-numpy.html
   - titles:
       # @start locale config
       en: &EN       STATISTICS
