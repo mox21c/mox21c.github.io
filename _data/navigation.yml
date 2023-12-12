@@ -40,6 +40,10 @@ doc-ai-ko:
         url: 2023/12/11/tokenizer.html
       - title: 임베딩(embedding)
         url: 2023/12/11/embedding.html
+  - title: DeepLearning
+    children:
+      - title: DeepLearning Numpy
+        url: 2023/12/12/deeplearning-numpy.html
 
 doc-statistic-ko:
   - title: 기초통계(basic)
