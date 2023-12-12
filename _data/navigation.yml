@@ -36,3 +36,9 @@ doc-statistic-ko:
       - title: 기초통계(overview)
         url: 2023/12/11/basic-overview.html
 
+doc-pandas-ko:
+  - title: pandas
+    children:
+      - title: pandas groupby
+        url: 2023/12/12/pandas-groupby-1.html
+
