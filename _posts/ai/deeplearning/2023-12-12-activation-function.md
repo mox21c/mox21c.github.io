@@ -28,6 +28,7 @@ mathjax: true
 
 
 ## 1. 계단 함수
+![Image](/assets/images/ai/deeplearning/step_function.png)
 
 ## 2. 시그모이드 함수
 
