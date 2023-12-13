@@ -38,7 +38,5 @@ mathjax: true
 ![Image](/assets/images/ai/deeplearning/relu_function.png)
 ## 5. Leaky ReLU 함수
 
-## 6. 항등함수
-
-## 7. Softmax 함수
+## 6. Softmax 함수
 
