@@ -12,6 +12,7 @@ aside:
 key: 20231212
 tags: 활성화함수
 lang: ko
+mathjax: true
 ---
 
 활성화 함수는 뉴런을 흥분시키기 위한 함수이다.
