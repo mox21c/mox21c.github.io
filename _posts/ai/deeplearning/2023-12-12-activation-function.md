@@ -31,11 +31,11 @@ mathjax: true
 ![Image](/assets/images/ai/deeplearning/step_function.png)
 
 ## 2. 시그모이드 함수
-
+![Image](/assets/images/ai/deeplearning/sigmoid_function.png)
 ## 3. tanh 함수
-
+![Image](/assets/images/ai/deeplearning/tanh_function.png)
 ## 4. ReLU 함수
-
+![Image](/assets/images/ai/deeplearning/relu_function.png)
 ## 5. Leaky ReLU 함수
 
 ## 6. 항등함수
