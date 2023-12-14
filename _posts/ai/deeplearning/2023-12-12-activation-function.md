@@ -30,6 +30,12 @@ mathjax: true
 ## 1. 계단 함수
 ![Image](/assets/images/ai/deeplearning/step_function.png)
 
+함수의 입력값 x 가 0 이하면 출력값은 0이되고, x 가 0보다 크면 y 는 1이 된다.
+
+$$
+y = \begin{cases} 0 & \mbox{(x \le 0)} \\ 1 & \mbox{(x > 0) \end{cases}}
+$$
+
 ## 2. 시그모이드 함수
 ![Image](/assets/images/ai/deeplearning/sigmoid_function.png)
 ## 3. tanh 함수
