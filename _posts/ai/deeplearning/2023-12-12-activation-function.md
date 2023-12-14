@@ -78,5 +78,27 @@ $$
 
 ## 5. Leaky ReLU 함수
 ![Image](/assets/images/ai/deeplearning/leaky_relu_function.png)
+
+$$
+y = \begin{cases} 0.01x & (x \leq 0) \\ x & (x > 0) \end{cases}
+$$
+
+ReLU 그래프와 비슷한 듯 보이지만 x가 음수의 영역에서 그래프 직선이 조금 기울어져 있다.
+ReLU에서는 출력이 0이 되어 더 이상 학습이 진행되지 않는 뉴런이 다수 발생하는 dying ReLU라는 현상이 알려져 있다.
+Leaky ReLU는 x 가 음수인 영역에서 아주 자은 기울기를 만들어 이 dying ReLU 문제를 피할 수 있따.
+
 ## 6. Softmax 함수
 ![Image](/assets/images/ai/deeplearning/softmax_function.png)
+
+활성화 함수의 출력값을 y 입력값을 x로 하고 같은 층의 뉴런의 수가 n이라면 한다면 SoftMax 함수는 아래와 같이 표현된다.
+
+$$
+y = \dfrac{exp(x)}{\sum_{k=1}^{n}exp(x_{k})}
+$$
+
+우변의 분모 $$\sum_{k=1}^{n}exp(x_{k}) \notag$$ 는 같은 층의 각 활성화 함수에 입력되는 $$x_{k} \notag$$ 를 $$exp(x_{k}) \notag$$로 계산해 더한 값이다.
+또한 다음의 관계에서 표현되는 것처럼 같은 층의 모든 활성화 함수의 출력값을 더하면 1이 된다.
+
+$$
+\sum_{i=1}^{n}(\dfrac{exp(x_{l})}{\sum_{k=1}^{n}exp(x_{k}}) = \dfrac{\sum_{i=1}^{n}exp(x_{l})}{\sum_{k=1}^{n}exp(x_{k})} = 1
+$$
