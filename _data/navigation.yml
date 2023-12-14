@@ -40,6 +40,8 @@ doc-ai-ko:
         url: 2023/12/12/deeplearning-numpy.html
       - title: 활성화 함수
         url: 2023/12/12/activation-function.html
+      - title: 신경망 구현
+        url: 2023/12/14/neural-network.html
 
   - title: NLP
     children:
