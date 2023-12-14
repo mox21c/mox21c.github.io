@@ -33,7 +33,7 @@ mathjax: true
 함수의 입력값 x 가 0 이하면 출력값은 0이되고, x 가 0보다 크면 y 는 1이 된다.
 
 $$
-y = \begin{cases} 0 & \mbox{(x \leq 0)} \\ 1 & \mbox{(x > 0)} \end{cases}
+y = \begin{cases} 0 & (x \leq 0) \\ 1 & (x > 0) \end{cases}
 $$
 
 ## 2. 시그모이드 함수
