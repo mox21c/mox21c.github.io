@@ -57,8 +57,25 @@ $$
 
 ## 3. tanh 함수
 ![Image](/assets/images/ai/deeplearning/tanh_function.png)
+
+하이퍼볼릭 탄젠트(hyperbolic tangent)는 -1과 1 사이에서 매끄러운 곡선으로 변화하는 함수이다. 곡선의 형태는 시그모이드 함수와 비슷한데 0을 중심으로 대칭 형태이기 때문에 밸런스가 좋은 활성화 함수이다.
+
+$$
+y = \dfrac{exp(x) - exp(-x)}{exp(x) + exp(-x)}
+$$
+
 ## 4. ReLU 함수
 ![Image](/assets/images/ai/deeplearning/relu_function.png)
+
+Rectified Linear Unit 는 램프 함수(ramp function)라고도 불린다.
+x > 0 범위에서 우상향 방향으로 뻗어 올라가는 모양이 특징인 활성화 함수이다.
+
+$$
+y = \begin{cases} 0 & (x \leq 0) \\ x & (x > 0) \end{cases}
+$$
+
+함수의 입력값 x가 음수인 경우 함수의 출력값 y는 0이 되고, x가 양수인 경우 y는 x와 같은 값이 된다.
+
 ## 5. Leaky ReLU 함수
 ![Image](/assets/images/ai/deeplearning/leaky_relu_function.png)
 ## 6. Softmax 함수
