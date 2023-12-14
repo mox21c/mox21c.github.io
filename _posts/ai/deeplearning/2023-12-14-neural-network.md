@@ -15,7 +15,7 @@ lang: ko
 ---
 
 ## 1. 단일 뉴런 구현
-![Image](/assets/images/ai/deeplearning/neural_network.png)
+![Image](/assets/images/ai/deeplearning/single_neural.png)
 
 Input 값 두개를 이용하여 단일 뉴런의 출력을 계산한다.
 ```python
