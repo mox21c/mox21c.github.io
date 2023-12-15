@@ -4,7 +4,7 @@ article_header:
   type: cover
   image:
     src: /assets/images/ai/deeplearning/deeplearning.png
-title: 단순 신경망 Weight & Bias
+title: 신경망 Weight & Bias
 sidebar:
   nav: doc-ai-ko
 aside:
