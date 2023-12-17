@@ -164,3 +164,9 @@ plt.colorbar()
 plt.show()
 ```
 ![Image](/assets/images/ai/deeplearning/3_layer_network_result.png)
+
+단일 뉴런이었을 때는 흰색 영역과 검은색 영역 두 개로 분할되었지만 다수의 뉴런으로 형성된 이 신경망에서는 흰색이 양쪽 검은색 영역 사이에 끼어 있다.
+뉴런이 흥분되기 위해서는 다수의 뉴런이 서로 작용하는 조금 더 복잡한 조건이 필요해 졌다.
+
+## 신경망(분류)
+![Image](/assets/images/ai/deeplearning/classifier_network.png)
