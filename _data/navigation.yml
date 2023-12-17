@@ -23,12 +23,12 @@ header:
     url: 2023/12/11/basic-overview.html
   - titles:
       # @start locale config
-      en: &EN       PANDAS
+      en: &EN       PYTHON & PANDAS
       en-GB: *EN
       en-US: *EN
       en-CA: *EN
       en-AU: *EN
-      ko: &KO       PANDAS
+      ko: &KO       PYTHON & PANDAS
       ko-KR: *KO
       # @end locale config
     url: 2023/12/12/pandas-groupby-1.html
