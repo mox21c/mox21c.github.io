@@ -170,3 +170,69 @@ plt.show()
 
 ## 신경망(분류)
 ![Image](/assets/images/ai/deeplearning/classifier_network.png)
+
+층의 개수나 입력층, 은닉층은 회귀랑 동일하지만, 출력층의 뉴런이 2개라는 점이 다르다. 출력층의 활성화 함수는 softmax 함수 이용
+### 전체 코드
+```python
+%matplotlib inline
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.arange(-1.0, 1.0, 0.1)
+Y = np.arange(-1.0, 1.0, 0.1)
+
+
+# 가중치
+# 은닉층 2*2 행렬
+w_im = np.array([[1.0, 2.0],
+                 [2.0, 3.0]])
+
+# 출력층 2*1 행렬
+w_mo = np.array([[-1.0,1.0],
+                 [1.0,-1.0]])
+
+# 편향
+# 은닉층
+b_im = np.array([3.0, -3.0])
+# 출력층
+b_mo = np.array([0.4, 0.1])
+
+def middle_layer(x,w,b):
+    u = np.dot(x,w) + b
+    return 1/(1+np.exp(-u))
+
+def output_layer(x, w, b):
+    u = np.dot(x,w) + b
+    return np.exp(u)/np.sum(np.exp(u))
+
+
+x_1 = []
+y_1 = []
+x_2 = []
+y_2 = []
+
+for i in range(20):
+    for j in range(20):
+
+        # 순전파
+        inp = np.array([X[i], Y[j]]) # 입력층
+        mid = middle_layer(inp, w_im, b_im) # 은닉층
+        out = output_layer(mid, w_mo, b_mo) # 출력층
+
+        if out[0] > out[1]:
+            x_1.append(X[i])
+            y_1.append(Y[j])
+        else:
+            x_2.append(X[i])
+            y_2.append(Y[j])
+
+
+plt.scatter(x_1, y_1, marker="+")
+plt.scatter(x_2, y_2, marker="o")
+plt.show()
+```
+![Image](/assets/images/ai/deeplearning/classifier_network_result.png)
+
+가중치와 편향 값을 변화시키면 경계가 다양하게 변한다.
+회귀 문제뿐만 아니라 분류 문제에서도 신경망의 표현력을 확인 할 수 있다. 여기에서 layer을 더 쌓으면 표현력이 향상된다.
