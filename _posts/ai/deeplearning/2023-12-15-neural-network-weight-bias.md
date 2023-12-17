@@ -49,7 +49,7 @@ Z의 값은 x의 input과 y의 input 에 각 가중치를 곱한후 bias 의 결
 Z의 출력값에 대해 설명하자면 검은색의 출력값은 0에 가깝고 흰색의 출력값은 1에 가까운 수이다.
 Sigmoid 함수의 특성으로 보면 입력값이 작을 수록 출력값은 0에 가깝고, 입력값이 커지면 출력은 1에 가까워진다.
 
-### Weight 의 변화에 따른 출력값 변화
+### Weight 의 변화에 따른 출력값
 #### weight 점 대칭
 w_x = 2.5, w_y = 3.0
 
@@ -59,7 +59,7 @@ w_x = -2.5, w_y = -3.0
 
 ![Image](/assets/images/ai/deeplearning/weight_1.png){:width="400px" height="400px"}
 
-위 두 출력값을 보면 결과가 반전된 상태로 볼수 있다.
+위 두 출력값을 보면 결과가 반전된 상태로 볼수 있다. 즉 가중치 값은 특정 input 값의 강도의 세기를 변화함으로써 출력값에 영향을 미치게 할 수 있다.
 
 #### weight 가중치 0
 w_x = 0, w_y = 3.0
@@ -72,7 +72,7 @@ w_x = 2.5, w_y = 0
 
 첫번째 출력값은 x를 input 의 가중치를 0으로 만든 상태이고, 두번째 출력값은 y의 input의 가중치를 0으로 만든 상태이다.
 
-### bias 의 변화에 따른 출력값 변화
+### bias 의 변화에 따른 출력값
 bias = -2.0
 
 ![Image](/assets/images/ai/deeplearning/bias_1.png){:width="400px" height="400px"}
@@ -84,3 +84,7 @@ bias = 0
 bias = 2.0
 
 ![Image](/assets/images/ai/deeplearning/bias_3.png){:width="400px" height="400px"}
+
+weight 와bias 값에 따라 전체 값에 대해 변화를 줄 수 있다.
+
+이 두개의 값(weight, bias) 를 적절하게 조정을 하여 좋은 결과를 도출 할 수 있다.
