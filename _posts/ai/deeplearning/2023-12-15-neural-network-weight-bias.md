@@ -14,7 +14,7 @@ tags: 신경망
 lang: ko
 ---
 
-## 1. 가중치
+## 1. Weight 와 Bias
 ![Image](/assets/images/ai/deeplearning/single_neural.png)
 
 단일 뉴런 코드에서 다양한 가중치 값에서 출력을 확인해 본다.
@@ -45,19 +45,23 @@ for i in range(10):
         y = 1/(1 + np.exp(-u))  #sigmoid 함수
         Z[j][i] = y
 ```
-가중치의 값
+Z의 값은 x의 input과 y의 input 에 각 가중치를 곱한후 bias 의 결과를 최종 sigmoid 의 출력값이다.
+
+
+### Weight 의 변화에 따른 출력값 변화
 w_x = 2.5, w_y = -3.0
 
-![Image](/assets/images/ai/deeplearning/single_neural_output.png)
+![Image](/assets/images/ai/deeplearning/single_neural_output.png){:width="400px" height="400px"}
+
 
 w_x = -2.5, w_y = -3.0
 
-![Image](/assets/images/ai/deeplearning/weight_1.png)
+![Image](/assets/images/ai/deeplearning/weight_1.png){:width="400px" height="400px"}
 
 w_x = 0, w_y = 3.0
 
-![Image](/assets/images/ai/deeplearning/weight_2.png)
+![Image](/assets/images/ai/deeplearning/weight_2.png){:width="400px" height="400px"}
 
 w_x = 2.5, w_y = 0
 
-![Image](/assets/images/ai/deeplearning/weight_3.png)
+![Image](/assets/images/ai/deeplearning/weight_3.png){:width="400px" height="400px"}
