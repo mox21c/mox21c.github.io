@@ -163,3 +163,4 @@ plt.imshow(Z, "gray", vmin = 0.0, vmax = 1.0)
 plt.colorbar()
 plt.show()
 ```
+![Image](/assets/images/ai/deeplearning/3_layer_network_result.png)
