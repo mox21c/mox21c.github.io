@@ -163,7 +163,7 @@ plt.imshow(Z, "gray", vmin = 0.0, vmax = 1.0)
 plt.colorbar()
 plt.show()
 ```
-![Image](/assets/images/ai/deeplearning/3_layer_network_result.png)
+![Image](/assets/images/ai/deeplearning/3_layer_network_result.png){:width="400px" height="400px"}
 
 단일 뉴런이었을 때는 흰색 영역과 검은색 영역 두 개로 분할되었지만 다수의 뉴런으로 형성된 이 신경망에서는 흰색이 양쪽 검은색 영역 사이에 끼어 있다.
 뉴런이 흥분되기 위해서는 다수의 뉴런이 서로 작용하는 조금 더 복잡한 조건이 필요해 졌다.
@@ -232,7 +232,7 @@ plt.scatter(x_1, y_1, marker="+")
 plt.scatter(x_2, y_2, marker="o")
 plt.show()
 ```
-![Image](/assets/images/ai/deeplearning/classifier_network_result.png)
+![Image](/assets/images/ai/deeplearning/classifier_network_result.png){:width="400px" height="400px"}
 
 가중치와 편향 값을 변화시키면 경계가 다양하게 변한다.
 회귀 문제뿐만 아니라 분류 문제에서도 신경망의 표현력을 확인 할 수 있다. 여기에서 layer을 더 쌓으면 표현력이 향상된다.
