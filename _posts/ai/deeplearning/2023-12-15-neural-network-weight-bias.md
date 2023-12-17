@@ -59,7 +59,8 @@ w_x = -2.5, w_y = -3.0
 
 ![Image](/assets/images/ai/deeplearning/weight_1.png){:width="400px" height="400px"}
 
-위 두 출력값을 보면 결과가 반전된 상태로 볼수 있다. 즉 가중치 값은 특정 input 값의 강도의 세기를 변화함으로써 출력값에 영향을 미치게 할 수 있다.
+위 두 출력값을 보면 결과가 반전된 상태로 볼수 있다. 즉 가중치 값은 특정 input 값의 영향력을 조정한다.
+가중치가 0에 가까우면 영향력이 작게 되고, 0보다 커지면 영향력이 확대된다. 음수가 되면 영향력을 반대가 된다.
 
 #### weight 가중치 0
 w_x = 0, w_y = 3.0
@@ -85,6 +86,5 @@ bias = 2.0
 
 ![Image](/assets/images/ai/deeplearning/bias_3.png){:width="400px" height="400px"}
 
-weight 와bias 값에 따라 전체 값에 대해 변화를 줄 수 있다.
-
+bias는 전체 출력에 대한 민감도를 조정할 수 있다. 즉 bias는 뉴런이 흥분하기 쉬운 정도를 결정한다.
 이 두개의 값(weight, bias) 를 적절하게 조정을 하여 좋은 결과를 도출 할 수 있다.
