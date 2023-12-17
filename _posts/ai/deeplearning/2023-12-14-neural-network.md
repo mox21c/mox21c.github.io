@@ -61,11 +61,11 @@ $$
 
 ![Image](/assets/images/ai/deeplearning/single_neural_output.png)
 
-검은색 출력값이 0, 즉 뉴련이 흥분하이 않은 상태를 나타내며, 흰색은 출력값 1, 즉 뉴런이 흥분한 상태를 나타낸다.
-좌상단부의 검은색 영역, 즉 풀력밧이 0에 가까운 영역에서 우하단부의 흰색 영역, 즉 풀력값이 1에 가까운 영역까지의 풀력값은 연속적으로 변화하고 있다.
+검은색 출력값이 0, 즉 뉴련이 흥분하지 않은 상태를 나타내며, 흰색은 출력값 1, 즉 뉴런이 흥분한 상태를 나타낸다.
+좌상단부의 검은색 영역, 즉 출력값이 0에 가까운 영역에서 우하단부의 흰색 영역, 출력값이 1에 가까운 영역까지의 출력값은 연속적으로 변화하고 있다.
 활성화 함수로 시그모이드 함수를 이용했기 때문에 0과 1사이를 표현하는 이유로 나타나는 현상이다.
 
-## 3 Layer Network
+## 3 Layer Network(회귀)
 ![Image](/assets/images/ai/deeplearning/3_layer_network.png)
 
 이 신경망은 입력층(뉴런수 : n=2), 은닉층(n=w), 출력층(n=1) 의 3층 구조이다. 은닉층의 활성화 함수는 sigmoid 함수이며 출력층의 활성화 함수는 회귀 문제에 적합한 항등함수이다.
@@ -101,7 +101,7 @@ w_im = np.array([[4.0, 4.0],
                  [4.0, 4.0]])
 
 # 출력층 2*1 행렬
-w_mp = np.array([[1.0],
+w_mo = np.array([[1.0],
                  [-1.0]])
 ```
 
@@ -116,5 +116,50 @@ b_mo = np.array([0.1])
 
 ### 전체 코드
 ```python
+%matplotlib inline
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.arange(-1.0, 1.0, 0.2)
+Y = np.arange(-1.0, 1.0, 0.2)
+
+Z = np.zeros((10,10))
+
+# 가중치
+# 은닉층 2*2 행렬
+w_im = np.array([[4.0, 4.0],
+                 [4.0, 4.0]])
+
+# 출력층 2*1 행렬
+w_mo = np.array([[1.0],
+                 [-1.0]])
+
+# 편향
+# 은닉층
+b_im = np.array([3.0, -3.0])
+# 출력층
+b_mo = np.array([0.1])
+
+def middle_layer(x,w,b):
+    u = np.dot(x,w) + b
+    return 1/(1+np.exp(-u))
+
+def output_layer(x, w, b):
+    u = np.dot(x,w) + b
+    return u
+
+for i in range(10):
+    for j in range(10):
+
+        # 순전파
+        inp = np.array([X[i], Y[j]]) # 입력층
+        mid = middle_layer(inp, w_im, b_im) # 은닉층
+        out = output_layer(mid, w_mo, b_mo) # 출력층
+
+        Z[j][i] = out[0]
+
+plt.imshow(Z, "gray", vmin = 0.0, vmax = 1.0)
+plt.colorbar()
+plt.show()
 ```
