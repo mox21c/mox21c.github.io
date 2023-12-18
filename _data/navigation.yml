@@ -44,7 +44,7 @@ doc-ai-ko:
         url: 2023/12/14/neural-network.html
       - title: 신경망 Weight & Bias
         url: 2023/12/15/neural-network-weight-bias.html
-      - title: 신경망 역전파(BackPropagation) - Loss Function
+      - title: 신경망 역전파 - Loss Function
         url: 2023/12/17/loss-function.html
 
   - title: NLP
