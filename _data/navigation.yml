@@ -46,6 +46,8 @@ doc-ai-ko:
         url: 2023/12/15/neural-network-weight-bias.html
       - title: 신경망 역전파 - Loss Function
         url: 2023/12/17/loss-function.html
+      - title: 신경망 역전파 - 경사 하강법
+        url: 2023/12/18/gradient-decent.html
 
   - title: NLP
     children:
