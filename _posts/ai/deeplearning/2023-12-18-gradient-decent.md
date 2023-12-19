@@ -26,3 +26,15 @@ lang: ko
 
 ![Image](/assets/images/ai/deeplearning/gradient_decent_graph.png)
 
+그래프에서 x축은 가중치이고, y출근 오차이다. 즉 가중치에 따라 오차가 변화는데 오차가 최소가 되는 방향으로 가중치를 변화시킨다. 신경망의 모든 가중치를 이 곡선에서 오차가 하강하도록 변화시키면 오차를 조금씩 줄여갈 수 있다.
+이때 각 가중치의 변화량과, 편향의 변화량은 이 곡선의 기울기로 결정된다.
+
+경사 하강법으로 가중치와 편향을 수정할 때 w를 가중치, b를 편향, E를 오차라고 하면 아래의 식으로 표현할 수 있다.
+
+$$
+w <- w - \eta\dfrac{\partial E}{\partial w}
+$$
+
+$$
+b <- b - \eta\dfrac{\partial E}{\partial b}
+$$
