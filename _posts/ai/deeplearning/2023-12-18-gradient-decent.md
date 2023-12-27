@@ -50,11 +50,19 @@ $$\eta$$ 는 학습률(learning rate) 라고 부르는 상수이다. 학습률�
 순전파는 각 층의 출력값을 전파시키지만, 역전파에서는 입력값 오차의 기울기를 전파시킨다. 은닉층에서는 이 값들을 받아 강주치 기울기와 편향 기울기, 은닉층으로 들어오는 입력층의 기울기를 구한다.
 
 ## 3. 출력층 기울기
-$$w_{jk}$$ 를 출력증에서의 가중치, $$b_{k}를 편향, $$u_{k}$$를 가중치와 입력값 곱셉의 총합에 편향을 더한 값으로 표시한다.
+$$w_{jk}$$ 를 출력증에서의 가중치, $$b_{k}$$를 편향, $$u_{k}$$를 가중치와 입력값 곱셉의 총합에 편향을 더한 값으로 표시한다.
 가중치는 은닉층의 출력과 관련 있기 때문에 은닉층 뉴련의 출력은 $$y_{j}$$ 라고 표시하면 아래와 같은 그림이 된다.
 
 ![Image](/assets/images/ai/deeplearning/gradient-image-1.png)
 
+가중치의 기울기, 즉 오차를 가중치로 편미분한 값을 구할 수 있고 다음과 같이 표현할 수 있다.
+$$
+\partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}}
+$$
+가중치의 기울기는 연쇄 법직을 이용해 전개할 수 있다.
+$$
+\partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}} = \dfrac{\partial E}{\partial u_{k}}\dfrac{\partial u_{k}}{\partial w_{jk}}
+$$
 
 ![Image](/assets/images/ai/deeplearning/gradient-image-2.png)
 
