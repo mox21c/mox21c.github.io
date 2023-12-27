@@ -53,7 +53,27 @@ from nltk.tokenize import word_tokenize
 para = "Hello everyone. It's good to see you. Let's start our text mining class!"
 print(word_tokenize(para))
 ```
-문장에 대하여 단어 토큰화를 진행한 코드로 단어의 띄어쓰기 혹은 ` 와 같은 문자열 기준으로 토큰화가 진행되는 것을 볼 수 있다.
+문장에 대하여 단어 토큰화를 진행한 코드로 단어의 띄어쓰기 및 ` 와 같은 문자열 기준으로 토큰화가 진행되는 것을 볼 수 있다.
 ```text
 ['Hello', 'everyone', '.', 'It', "'s", 'good', 'to', 'see', 'you', '.', 'Let', "'s", 'start', 'our', 'text', 'mining', 'class', '!']
+```
+
+### 고려 사항
+1. 구두점이나 특수 문자를 단순 제외해서는 안된다.
+마침표(.) 와 같은 경우 문장의 경계를 알 수 있는데 도움이 된다. 혹은 숫자의 소숫점을 나타낼 때 가격을 의미하가도 하기 때문에 하나로 취급해야 한다.
+
+2. 줄임말과 단어 내에 띄어쓰기가 있는 경우
+단어가 줄임말로 쓰일 때 생기는 형태가 있다. 예를들어 I'm 같은 경우 I am 의 줄임말로 표현된다. 또한 하나의 단어이지만 띄어쓰기가 있는 경우도 있다.
+
+Penn Treebank Tokenization 규칙의 코드 예시
+```python
+from nltk.tokenize import TreebankWordTokenizer
+
+tokenizer = TreebankWordTokenizer()
+
+text = "Starting a home-based restaurant may be an ideal. it doesn't have a food chain or restaurant of their own."
+print('트리뱅크 워드토크나이저 :',tokenizer.tokenize(text))
+```
+```text
+트리뱅크 워드토크나이저 : ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.']
 ```
