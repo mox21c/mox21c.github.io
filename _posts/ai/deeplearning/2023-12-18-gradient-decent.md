@@ -56,12 +56,14 @@ $$w_{jk}$$ 를 출력증에서의 가중치, $$b_{k}$$를 편향, $$u_{k}$$를 �
 ![Image](/assets/images/ai/deeplearning/gradient-image-1.png)
 
 가중치의 기울기, 즉 오차를 가중치로 편미분한 값을 구할 수 있고 다음과 같이 표현할 수 있다.
-$$
-\partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}}
-$$
 가중치의 기울기는 연쇄 법직을 이용해 전개할 수 있다.
 $$
 \partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}} = \dfrac{\partial E}{\partial u_{k}}\dfrac{\partial u_{k}}{\partial w_{jk}}
+$$
+
+여기에서 $$\dfrac{\partial u_{k}}{\partial w_{jk}}$$ 분자가 은닉층에 있는 여러 뉴런의 출력값과 가중치의 곱의 합에 편향을 더한 것이다.
+$$
+
 $$
 
 ![Image](/assets/images/ai/deeplearning/gradient-image-2.png)
