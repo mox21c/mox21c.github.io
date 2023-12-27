@@ -77,3 +77,22 @@ print('트리뱅크 워드토크나이저 :',tokenizer.tokenize(text))
 ```text
 트리뱅크 워드토크나이저 : ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.']
 ```
+
+## 4. 한국어 토큰화 및 품사 태킹
+### 품사태킹 클래스 성능
+#### 로딩 시간
+사전 로딩을 포함하여 클래스를 로딩하는 시간.
+Kkma: 5.6988 secs
+Komoran: 5.4866 secs
+Hannanum: 0.6591 secs
+Twitter: 1.4870 secs
+Mecab: 0.0007 secs
+
+#### 실행시간
+10만 문자의 문서를 대상으로 각 클래스의 pos 메소드를 실행하는데 소요되는 시간.
+Kkma: 35.7163 secs
+Komoran: 25.6008 secs
+Hannanum: 8.8251 secs
+Twitter: 2.4714 secs
+Mecab: 0.2838 secs
+
