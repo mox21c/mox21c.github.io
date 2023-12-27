@@ -51,6 +51,8 @@ doc-ai-ko:
 
   - title: NLP
     children:
+      - title: 텍스트 전처리
+        url: 2023/12/27/text-preprocessing.html
       - title: 토큰화(Tokenizer)
         url: 2023/12/11/tokenizer.html
       - title: 임베딩(embedding)
