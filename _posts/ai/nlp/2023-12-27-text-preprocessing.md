@@ -45,3 +45,15 @@ print(sent_tokenize(para))
 ```text
 ['Hello everyone.', "It's good to see you.", "Let's start our text mining class!"]
 ```
+
+## 3. 단어 토큰화
+단어 단위로 토큰화를 진행한다.
+```python
+from nltk.tokenize import word_tokenize
+para = "Hello everyone. It's good to see you. Let's start our text mining class!"
+print(word_tokenize(para))
+```
+문장에 대하여 단어 토큰화를 진행한 코드로 단어의 띄어쓰기 혹은 ` 와 같은 문자열 기준으로 토큰화가 진행되는 것을 볼 수 있다.
+```text
+['Hello', 'everyone', '.', 'It', "'s", 'good', 'to', 'see', 'you', '.', 'Let', "'s", 'start', 'our', 'text', 'mining', 'class', '!']
+```
