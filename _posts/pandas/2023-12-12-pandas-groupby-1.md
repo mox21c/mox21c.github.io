@@ -15,14 +15,7 @@ lang: ko
 ---
 
 ## PANDAS GROUPBY AGG #1
-PANDAS
-{: .label .label-blue}
-
-GROUPBY
-{: .label .label-green}
-
-AGG
-{: .label .label-green}
+`PANDAS`{: .label .label-blue} `GROUPBY`{: .label .label-green} `AGG`{: .label .label-green}
 
 groupby 함수는 데이터를 그룹으로 분할하여 각 그룹별 집계를 한다.
 {: .fs-6 .fw-300 }
