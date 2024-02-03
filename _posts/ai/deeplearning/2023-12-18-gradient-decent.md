@@ -63,9 +63,9 @@ $$
 
 여기에서 $$\dfrac{\partial u_{k}}{\partial w_{jk}}$$ 분자가 은닉층에 있는 여러 뉴런의 출력값과 가중치의 곱의 합에 편향을 더한 것이다.    
 $$
-\dfrac{\partial u_{k}}{\partial w_{jk}} 
-= \dfrac{\partial(\sum_{q=1}^{m}y_{q}w_{qk}+b_{k})}{\partial w_{jk}}
-= \dfrac{\partial}{\partial w_{jk}}(y_{1}w_{1k} + y{2}w_{2k} + \cdot \cdot \cdot + y_{j}w_{jk} + \cdot \cdot \cdot + y_{m}w_{mk} + b_{k})
+\dfrac{\partial u_{k}}{\partial w_{jk}}    
+= \dfrac{\partial(\sum_{q=1}^{m}y_{q}w_{qk}+b_{k})}{\partial w_{jk}}    
+= \dfrac{\partial}{\partial w_{jk}}(y_{1}w_{1k} + y{2}w_{2k} + \cdot \cdot \cdot + y_{j}w_{jk} + \cdot \cdot \cdot + y_{m}w_{mk} + b_{k})    
 = y_{j}
 $$
 
