@@ -54,8 +54,10 @@ $$\eta$$ 는 학습률(learning rate) 라고 부르는 상수이다. 학습률�
 ### 3-1 출력층
 ![Image](/assets/images/ai/deeplearning/output_layer_gradient.png)
 
+출력층에서의 기울기를 구하는 식은 아래와 같다. 
+
 $$
-\delta = \dfrac{\partial E}{\partial u_{k}} = \dfrac{\partial E}{\partial y_{k}}\dfrac{\partial y_{k}}{\partial u_{k}}
+\delta_{k} = \dfrac{\partial E}{\partial u_{k}} = \dfrac{\partial E}{\partial y_{k}}\dfrac{\partial y_{k}}{\partial u_{k}}
 $$
 
 위 식에서 가중치의 변화량은 
@@ -70,4 +72,36 @@ $$
 
 $$
 \delta y_{j} = \sum_{r=1}^{n}\delta_{r}w_{jr}
+$$
+
+여기에서 각 기울기는 다음과 같이 줄여서 나타낼 수 있다.
+
+$$
+\partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}}, \partial b_{k} = \dfrac{\partial E}{\partial b_{k}}, \partial y_{j} = \dfrac{\partial E}{\partial y_{j}}
+$$
+
+$$\delta_{k}$$ 를 구하는 방법은 손실 함수와 활성화 함수의 조합에 따라 다르며, $$\delta_{k}$$의 수는 출력층 뉴런의 수와 동일하다.
+
+은닉층에서 $$\delta_{j}$$ 구하는 데 출력층에서 계산한 $$\delta y_{j}$$ 를 사용한다.   
+출력층에서 구한 오차값을 신경망을 거슬러 올라 앞 층의 계산에 이용하게 한다.
+
+### 3-2 은닉층
+![Image](/assets/images/ai/deeplearning/hidden_layer_gradient.png)
+
+$$
+\delta_{j} = \dfrac{\partial E}{\partial u_{j}} = \partial y_{j}\dfrac{\partial y_{j}}{\partial u_{j}}
+$$
+
+위 식에서 가중치의 변화량은 
+
+$$
+\partial w_{ij} = y_{i}\delta_{j}
+$$
+
+$$
+\partial b_{j} = \delta_{j}
+$$
+
+$$
+\partial y_{i} = \sum_{q=1}^{m}\delta_{q}w_{iq}
 $$
