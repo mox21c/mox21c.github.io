@@ -100,6 +100,7 @@ $$
 \partial w_{jk} = y_{j}\delta_{k}
 $$
 
+즉 가중치 기울기 $$\dfrac{\partial E}{\partial w_{jk}} 를 $$y_{j}$$ 와 $$\delta_{k}$$ 곱으로 표시할 수 있다.
 ![Image](/assets/images/ai/deeplearning/gradient-image-2.png)
 
 ### 3.2 출력층의 편향 기울기
