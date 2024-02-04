@@ -61,9 +61,11 @@ $$
 $$
 \partial w_{jk} = y_{j}\delta_{k}
 $$
+
 $$
-\partail b_{k} = \delta_{k}
+\partial b_{k} = \delta_{k}
 $$
+
 $$
 \delta y_{j} = \sum_{r=1}^{n}\delta_{r}w_{jr}
 $$
