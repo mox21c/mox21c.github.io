@@ -52,6 +52,8 @@ $$\eta$$ 는 학습률(learning rate) 라고 부르는 상수이다. 학습률�
 ## 3. 기울기 구하는 식 정리
 
 ### 3-1 출력층
+![Image](/assets/images/ai/deeplearning/output_layer_gradient.png)
+
 $$
 \delta = \dfrac{\partial E}{\partial u_{k}} = \dfrac{\partial E}{\partial y_{k}}\dfrac{\partial y_{k}}{\partial u_{k}}
 $$
