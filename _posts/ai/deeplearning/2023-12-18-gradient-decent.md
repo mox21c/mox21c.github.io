@@ -72,10 +72,13 @@ $$
 = y_{j}
 $$
 
-(3)번 식의 우변 $$\dfrac{\partial E}{\partial u_{k}}$$ 부분은 출력층 뉴런의 출력을 $$y_{k}$$ 로 하는 뎐쇄 법칙에 따라 다음과 같이 식이 된다.
+(3)번 식의 우변 $$\dfrac{\partial E}{\partial u_{k}}$$ 부분은 출력층 뉴런의 출력을 $$y_{k}$$ 로 하는 연쇄 법칙에 따라 다음과 같이 식이 된다.
+
 $$
 \dfrac{\partial E}{\partial_{uk}} = \dfrac{\partial E}{\partial_{yk}}\dfrac{\partial_{yk}}{\partial_{uk}}
 $$
+
+
 
 
 ![Image](/assets/images/ai/deeplearning/gradient-image-2.png)
