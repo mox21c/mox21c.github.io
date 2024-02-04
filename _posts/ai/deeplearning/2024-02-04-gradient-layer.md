@@ -1,4 +1,18 @@
-
+---
+layout: article
+article_header:
+  type: cover
+  image:
+    src: /assets/images/ai/deeplearning/deeplearning.png
+title: 신경망 역전파 - 각 Layer 기울기
+sidebar:
+  nav: doc-ai-ko
+aside:
+  toc: true
+key: 20240204
+tags: gradient layer
+lang: ko
+---
 
 
 
