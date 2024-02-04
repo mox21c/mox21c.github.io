@@ -98,6 +98,7 @@ $$
 \partial w_{ij} = y_{i}\delta_{j}
 $$
 
+편향의 변화량
 $$
 \partial b_{j} = \delta_{j}
 $$
@@ -105,3 +106,11 @@ $$
 $$
 \partial y_{i} = \sum_{q=1}^{m}\delta_{q}w_{iq}
 $$
+
+여기에서 각 기울기는 다음과 같이 줄여서 나타낼 수 있다.
+
+$$
+\partial w_{ij} = \dfrac{\partial E}{\partial w_{ij}}, \partial b_{j} = \dfrac{\partial E}{\partial b_{j}}, \partial y_{i} = \dfrac{\partial E}{\partial y_{i}}
+$$
+
+은직층의 수가 증가하더라고 마찬가지로 $$\partial y$$ 을 전파시켜 늘어난 층의 각 기울기를 계산 할 수 있다.
