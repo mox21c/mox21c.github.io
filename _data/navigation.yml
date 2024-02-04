@@ -51,7 +51,7 @@ doc-ai-ko:
       - title: 신경망 역전파 - 경사 하강법
         url: 2023/12/18/gradient-decent.html
       - title: 신경망 역전파 - 각 Layer 기울기
-        url: 2024/02/02/gradient-layer.html
+        url: 2024/02/04/gradient-layer.html
 
   - title: NLP
     children:
