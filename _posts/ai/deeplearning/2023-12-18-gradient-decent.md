@@ -68,7 +68,7 @@ $$
 \partial w_{jk} = \dfrac{\partial E}{\partial w_{jk}} = \dfrac{\partial E}{\partial u_{k}}\dfrac{\partial u_{k}}{\partial w_{jk}}
 $$
 
-여기에서 $$\dfrac{\partial u_{k}}{\partial w_{jk}}$$ 분자가 은닉층에 있는 여러 뉴런의 출력값과 가중치의 곱의 합에 편향을 더한 것이다.    
+여기에서 우변의 $$\dfrac{\partial u_{k}}{\partial w_{jk}}$$ 부분은 분자가 은닉층에 있는 여러 뉴런의 출력값과 가중치의 곱의 합에 편향을 더한 것이다.    
 
 $$
 \begin{matrix}
@@ -78,12 +78,16 @@ $$
 \end{matrix}
 $$
 
-(3)번 식의 우변 $$\dfrac{\partial E}{\partial u_{k}}$$ 부분은 출력층 뉴런의 출력을 $$y_{k}$$ 로 하는 연쇄 법칙에 따라 다음과 같이 식이 된다.
+편미분하므로 $$$w_{jk}$$ 가 곱해진 항 이외에는 모두 0이 된다.
+
+(4)번 식의 우변 $$\dfrac{\partial E}{\partial u_{k}}$$ 부분은 출력층 뉴런의 출력을 $$y_{k}$$ 로 하는 연쇄 법칙에 따라 다음과 같이 식이 된다.
 
 $$
 \dfrac{\partial E}{\partial_{uk}} = \dfrac{\partial E}{\partial_{yk}}\dfrac{\partial_{yk}}{\partial_{uk}}
 $$
 
+즉 $$\dfrac{\partial E}{\partial_{uk}}$$ 부분은 오차를 출력층 뉴런의 출력으로 편미분한 것과 그 출력값을 $$u_{k}$$ 로 편미분한것의 곱이 된다.   
+$$\dfrac{\partial E}{\partial_{yk}}$$는 손실 함수를 편미분해서 구할 수 있고, $$\dfrac{\partial_{yk}}{\partial_{uk}}$$ 는 활성화 함수를 편미분 해서 구할 수 있다.
 
 
 
