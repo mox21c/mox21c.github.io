@@ -72,8 +72,7 @@ $$
 
 $$
 \begin{matrix}
-\dfrac{\partial u_{k}}{\partial w_{jk}} \\
-&=& \dfrac{\partial(\sum_{q=1}^{m}y_{q}w_{qk}+b_{k})}{\partial w_{jk}} \\
+\dfrac{\partial u_{k}}{\partial w_{jk}} &=& \dfrac{\partial(\sum_{q=1}^{m}y_{q}w_{qk}+b_{k})}{\partial w_{jk}} \\
 &=& \dfrac{\partial}{\partial w_{jk}}(y_{1}w_{1k} + y{2}w_{2k} + \cdot \cdot \cdot + y_{j}w_{jk} + \cdot \cdot \cdot + y_{m}w_{mk} + b_{k}) \\  
 &=& y_{j}
 \end{matrix}
