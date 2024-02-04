@@ -4,7 +4,7 @@ article_header:
   type: cover
   image:
     src: /assets/images/ai/deeplearning/deeplearning.png
-title: 신경망 역전파 - 각 Layer 기울기
+title: 신경망 역전파 - Layer Gradient
 sidebar:
   nav: doc-ai-ko
 aside:
