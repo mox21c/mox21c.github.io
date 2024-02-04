@@ -89,7 +89,16 @@ $$
 즉 $$\dfrac{\partial E}{\partial_{uk}}$$ 부분은 오차를 출력층 뉴런의 출력으로 편미분한 것과 그 출력값을 $$u_{k}$$ 로 편미분한것의 곱이 된다.   
 $$\dfrac{\partial E}{\partial_{yk}}$$는 손실 함수를 편미분해서 구할 수 있고, $$\dfrac{\partial_{yk}}{\partial_{uk}}$$ 는 활성화 함수를 편미분 해서 구할 수 있다.
 
+$$
+\delta = \dfrac{\partial E}{\partial_{uk}} = \dfrac{\partial E}{\partial_{yk}}\dfrac{\partial_{yk}}{\partial_{uk}}
+$$
 
+
+(4)번식을 정리하면
+
+$$
+\partial w_{jk} = y_{j}\delta_{k}
+$$
 
 ![Image](/assets/images/ai/deeplearning/gradient-image-2.png)
 
